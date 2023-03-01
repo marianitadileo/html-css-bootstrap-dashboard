@@ -1,0 +1,57 @@
+body {
+    font-family:'Roboto', sans-serif; ;
+}
+
+/* HEADER */
+header {
+    height: 100px;
+    background-color: blueviolet;
+}
+
+/* MAIN */
+main {
+    height: 100%;
+    background-color: blue;
+}
+
+/* ASIDE  */
+aside {
+    width: 80px;
+    background-color: brown;
+}
+
+/* MAIN-CONTENT  */
+.main-content {
+   width: calc(100% - 80px);
+   height: 100vh;
+   overflow-y:scroll;
+   background-color: coral;
+}
+
+/* JUMBO  */
+.jumbo {
+    height: 200px;
+    width: 100vw;
+    background-color: chartreuse;
+}
+
+.prossime-classi {
+    height: 500px;
+    background-color: yellow;
+}
+
+.faq {
+    height: 300px;
+    background-color: pink;
+}
+
+.todo {
+    height: 200px;
+    background-color: green;
+}
+
+.utenti-attivi {
+    height: 350px;
+    background-color: orange;
+}
+
