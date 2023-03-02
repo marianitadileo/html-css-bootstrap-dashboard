@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- link bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
     <!-- link icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link font  -->
@@ -33,30 +34,119 @@
             </aside>
 
             <!-- MAIN CONTENT -->
-            <section class="main-content">
+            <section class="main-content overflow-y-auto">
 
-                <section class="jumbo d-flex flex-column flex-md-row-reverse row">
+                <section class="ms_content_top d-flex row flex-column flex-md-row-reverse">
                     <div class="col-4">testo 1</div>
                     <div class="col-4">testo 2</div>
                     <div class="col-4">testo 3</div>
                 </section>
 
-                <div class="container">
+                <div class="ms_content_bot">
+                    <div class="container-fluid">
         
-                    <div class="row">
+                        <div class="row g-5">
 
-                        <div class="row col-lg-6">
+                            <div class="col-12 col-lg-7">
 
-                            <div class="prossime-classi"></div>
-                            <div class="faq"></div>
+                                <div class="prossime-classi">
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                          Featured
+                                        </div>
+                                        <div class="card-body">
+                                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti molestiae, perferendis ratione velit sunt, quam similique suscipit nulla ullam aspernatur ipsa porro. At sed aspernatur repellendus exercitationem similique enim iusto!
+                                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo non, veritatis enim tempore totam ad ratione voluptatum minima iure iste vel qui, tempora pariatur, similique sunt neque itaque obcaecati at.
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi exercitationem, ex labore doloribus quibusdam delectus! Dicta eos, tempora in a necessitatibus temporibus error inventore nesciunt ducimus unde corporis aut.
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="faq">
+                                    <div class="card">
+                                        <div class="card-header">
+                                         <h4>F.A.Q.</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                      Come aggiungere un nuovo studente?
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                      Come posso accedere alle informazioni del mio account?
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                      Posso usare questa dashboard da mobile?
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                      </div>
+                                </div>
 
-                        </div>
+                            </div>
 
-                        <div class="row col-lg-6">
+                            <div class="col-12 col-lg-5">
 
-                            <div class="todo"></div>
-                            <div class="utenti-attivi"></div>
+                                <div class="todo">
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                          <h4>Todo</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                                                  <label class="form-check-label stretched-link" for="firstCheckboxStretched">Kickoff nuove classi</label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                  <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+                                                  <label class="form-check-label stretched-link" for="secondCheckboxStretched">Lezione su Bootstrap 5 in classe #75</label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+                                                  <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Controllare username github studenti</label>
+                                                </li>
+                                              </ul>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="utenti-attivi">
+                                    <div class="card">
+                                        <div class="card-header">
+                                          Featured
+                                        </div>
+                                        <div class="card-body">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit dolor consequatur aut sapiente reiciendis provident maxime temporibus quo eos excepturi distinctio impedit illo natus, deleniti recusandae deserunt ad fugiat.
+                                      </div>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                    

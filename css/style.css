@@ -2,21 +2,29 @@ body {
     font-family:'Roboto', sans-serif; ;
 }
 
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
 /* HEADER */
 header {
+    width: 100%;
     height: 100px;
     background-color: blueviolet;
 }
 
 /* MAIN */
 main {
-    height: 100%;
+    width: 100%;
+    height: calc(100% - 100px);
     background-color: blue;
 }
 
 /* ASIDE  */
 aside {
     width: 80px;
+    height: 100vh;
     background-color: brown;
 }
 
@@ -24,34 +32,44 @@ aside {
 .main-content {
    width: calc(100% - 80px);
    height: 100vh;
-   overflow-y:scroll;
    background-color: coral;
 }
 
-/* JUMBO  */
-.jumbo {
+.ms_content_top {
     height: 200px;
     width: 100vw;
     background-color: chartreuse;
 }
 
 .prossime-classi {
-    height: 500px;
+   
     background-color: yellow;
 }
 
 .faq {
-    height: 300px;
+    
     background-color: pink;
 }
 
 .todo {
-    height: 200px;
+    
     background-color: green;
 }
 
 .utenti-attivi {
-    height: 350px;
+   
     background-color: orange;
 }
 
+
+/* RESPONSIVE */
+@media screen and (min-width: 992px) {
+    aside {
+        width: 120px;
+   } 
+
+   .main-content {
+    width: calc(100% - 120px);
+   }
+
+}
