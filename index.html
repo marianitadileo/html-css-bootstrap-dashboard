@@ -26,7 +26,7 @@
                     
                     <div class="col-auto">
                         <img class="d-lg-none ms_img_logo" src="img/mobile-logo.png" alt="">
-                        <img class="d-none d-lg-block" src="img/logo.svg" alt="">
+                        <img class="d-none d-lg-block ms_img_logo_lg" src="img/logo.svg" alt="">
                     </div>
 
                     <div class="col">
@@ -36,8 +36,11 @@
                           </div>
                     </div>
 
-                    <div class="col-auto">
-                        <i class="fa-solid fa-bell text-warning mt-1"></i>
+                    <div class="col-auto d-flex gap-3 pt-2">
+                        <i class="fa-solid fa-list d-none d-lg-block text-muted"></i>
+                        <i class="fa-solid fa-circle-question d-none d-lg-block text-muted "></i>
+                        <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block text-muted"></i>
+                        <i class="fa-solid fa-bell text-warning"></i>
                     </div>
                 </div>
             </div>
@@ -49,14 +52,25 @@
         
         <main class="d-flex">
             <!-- ASIDE -->
-            <aside class="d-flex flex-column justify-content-between text-white fs-3 text-center">
-                <div class="ms_aside_top">
-                    <i class="fa-solid fa-house"></i>
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <i class="fa-solid fa-signal"></i>
+            <aside class="d-flex flex-column justify-content-between text-white fs-4 text-center">
+                <div class="ms_aside_top d-flex flex-column p-3 gap-4">
+                    <div>
+                        <i class="fa-solid fa-house"></i>
+                        <span class="ps-2 d-none d-lg-inline-block">Home</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="ps-3 d-none d-lg-inline-block">Stats</span> 
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-signal"></i>
+                        <span class="ps-2 d-none d-lg-inline-block">Signals</span>
+                    </div>
+                    
                 </div>
-                <div class="ms_aside_bot">
+                <div class="ms_aside_bot pb-3">
                     <i class="fa-solid fa-gear"></i>
+                    <span class="ps-2 d-none d-lg-inline-block">Admin</span>
                 </div>
                
             </aside>
@@ -99,108 +113,108 @@
                                                 <thead>
                                                     <tr>
                                                       <th scope="col">Nome</th>
-                                                      <th class="d-none d-lg-block" scope="col">Data inizio</th>
-                                                      <th scope="col" class="d-none d-lg-block">ROI</th>
+                                                      <th class="d-none d-lg-table-cell" scope="col">Data inizio</th>
+                                                      <th scope="col" class="d-none d-lg-table-cell">ROI</th>
                                                       <th scope="col">Stato</th>
                                                       <th scope="col">Azioni</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <th scope="row"><img class="ms_img_avatar d-inline-block" src="img/class-avatar.jpg" alt="">Classe 75</th>
-                                                        <td class="d-none d-lg-block">15 Feb 2021</td>
-                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <th scope="row"><img class="ms_img_avatar me-2" src="img/class-avatar.jpg" alt="">Classe 75</th>
+                                                        <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                                                        <td class="d-none d-lg-table-cell">20%</td>
                                                         <td>
                                                             <span class="badge text-bg-success">Done</span>
                                                         </td>
                                                         <td>
-                                                            <span><i class="fa-solid fa-pencil"></i></span>
-                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                            <span><i class="fa-solid fa-pencil border rounded p-1 text-secondary border-secondary"></i></span>
+                                                            <span><i class="fa-solid fa-trash border rounded p-1 text-secondary border-secondary"></i></span>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row"><img class="ms_img_avatar" src="img/class-avatar.jpg" alt="">Classe 76</th>
-                                                        <td class="d-none d-lg-block">16 Feb 2021</td>
-                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <th scope="row"><img class="ms_img_avatar me-2" src="img/class-avatar.jpg" alt="">Classe 76</th>
+                                                        <td class="d-none d-lg-table-cell">16 Feb 2021</td>
+                                                        <td class="d-none d-lg-table-cell">20%</td>
                                                         <td>
                                                             <span class="badge text-bg-success">Done</span>
                                                         </td>
                                                         <td>
-                                                            <span><i class="fa-solid fa-pencil"></i></span>
-                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                            <span><i class="fa-solid fa-pencil border rounded p-1 text-secondary border-secondary"></i></span>
+                                                            <span><i class="fa-solid fa-trash border rounded p-1 text-secondary border-secondary "></i></span>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row"><img class="ms_img_avatar" src="img/class-avatar.jpg" alt="">Classe 77</th>
-                                                        <td class="d-none d-lg-block">17 Feb 2021</td>
-                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <th scope="row"><img class="ms_img_avatar me-2" src="img/class-avatar.jpg" alt="">Classe 77</th>
+                                                        <td class="d-none d-lg-table-cell">17 Feb 2021</td>
+                                                        <td class="d-none d-lg-table-cell">20%</td>
                                                         <td>
                                                             <span class="badge text-bg-warning text-white">Process</span>
                                                         </td>
                                                         <td>
-                                                            <span><i class="fa-solid fa-pencil"></i></span>
-                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                            <span><i class="fa-solid fa-pencil border rounded p-1 text-secondary border-secondary"></i></span>
+                                                            <span><i class="fa-solid fa-trash border rounded p-1 text-secondary border-secondary"></i></span>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row"><img class="ms_img_avatar" src="img/class-avatar.jpg" alt="">Classe 78</th>
-                                                        <td class="d-none d-lg-block">18 Feb 2021</td>
-                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <th scope="row"><img class="ms_img_avatar me-2" src="img/class-avatar.jpg" alt="">Classe 78</th>
+                                                        <td class="d-none d-lg-table-cell">18 Feb 2021</td>
+                                                        <td class="d-none d-lg-table-cell">20%</td>
                                                         <td>
                                                             <span class="badge text-bg-success">Done</span>
                                                         </td>
                                                         <td>
-                                                            <span><i class="fa-solid fa-pencil"></i></span>
-                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                            <span><i class="fa-solid fa-pencil border rounded p-1 text-secondary border-secondary"></i></span>
+                                                            <span><i class="fa-solid fa-trash border rounded p-1 text-secondary border-secondary"></i></span>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row"><img class="ms_img_avatar" src="img/class-avatar.jpg" alt="">Classe 79</th>
-                                                        <td class="d-none d-lg-block">19 Feb 2021
+                                                        <th scope="row"><img class="ms_img_avatar me-2 " src="img/class-avatar.jpg" alt="">Classe 79</th>
+                                                        <td class="d-none d-lg-table-cell">19 Feb 2021
                                                         </td>
-                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <td class="d-none d-lg-table-cell">20%</td>
                                                         <td>
                                                             <span class="badge text-bg-danger">Failed</span>
                                                         </td>
                                                         <td>
-                                                            <span><i class="fa-solid fa-pencil"></i></span>
-                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                            <span><i class="fa-solid fa-pencil border rounded p-1 text-secondary border-secondary"></i></span>
+                                                            <span><i class="fa-solid fa-trash border rounded p-1 text-secondary border-secondary"></i></span>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row"><img class="ms_img_avatar" src="img/class-avatar.jpg" alt="">Classe 80</th>
-                                                        <td class="d-none d-lg-block">20 Feb 2021</td>
-                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <th scope="row"><img class="ms_img_avatar me-2" src="img/class-avatar.jpg" alt="">Classe 80</th>
+                                                        <td class="d-none d-lg-table-cell">20 Feb 2021</td>
+                                                        <td class="d-none d-lg-table-cell">20%</td>
                                                         <td>
                                                             <span class="badge text-bg-success">Done</span>
                                                         </td>
                                                         <td>
-                                                            <span><i class="fa-solid fa-pencil"></i></span>
-                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                            <span><i class="fa-solid fa-pencil border rounded p-1 text-secondary border-secondary"></i></span>
+                                                            <span><i class="fa-solid fa-trash border rounded p-1 text-secondary border-secondary"></i></span>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row"><img class="ms_img_avatar" src="img/class-avatar.jpg" alt="">Classe 81</th>
-                                                        <td class="d-none d-lg-block">21 Feb 2021</td>
-                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <th scope="row"><img class="ms_img_avatar me-2" src="img/class-avatar.jpg" alt="">Classe 81</th>
+                                                        <td class="d-none d-lg-table-cell">21 Feb 2021</td>
+                                                        <td class="d-none d-lg-table-cell">20%</td>
                                                         <td>
                                                             <span class="badge text-bg-danger">Failed</span>
                                                         </td>
                                                         <td>
-                                                            <span><i class="fa-solid fa-pencil"></i></span>
-                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                            <span><i class="fa-solid fa-pencil border rounded p-1 text-secondary border-secondary"></i></span>
+                                                            <span><i class="fa-solid fa-trash border rounded p-1 text-secondary border-secondary"></i></span>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row"><img class="ms_img_avatar" src="img/class-avatar.jpg" alt="">Classe 82</th>
-                                                        <td class="d-none d-lg-block">22 Feb 2021</td>
-                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <th scope="row"><img class="ms_img_avatar me-2" src="img/class-avatar.jpg" alt="">Classe 82</th>
+                                                        <td class="d-none d-lg-table-cell">22 Feb 2021</td>
+                                                        <td class="d-none d-lg-table-cell">20%</td>
                                                         <td>
                                                             <span class="badge text-bg-success">Done</span>
                                                         </td>
                                                         <td>
-                                                            <span><i class="fa-solid fa-pencil"></i></span>
-                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                            <span><i class="fa-solid fa-pencil border rounded p-1 text-secondary border-secondary"></i></span>
+                                                            <span><i class="fa-solid fa-trash border rounded p-1 text-secondary border-secondary"></i></span>
                                                         </td>
                                                     </tr>
                                                     
@@ -285,7 +299,7 @@
                                       </div>
                                 </div>
                                 <div class="utenti-attivi">
-                                    <div class="card" style="width: 18rem;">
+                                    <div class="card">
                                         <img src="img/stats.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                           <h5 class="card-title">Utenti attivi</h5>
