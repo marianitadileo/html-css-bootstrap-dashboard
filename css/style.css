@@ -8,59 +8,44 @@ body {
 }
 
 /* HEADER */
-header {
+.ms_header {
     width: 100%;
     height: 100px;
-    background-color: blueviolet;
+}
+
+.ms_img_logo {
+    width: 40px;
 }
 
 /* MAIN */
 main {
     width: 100%;
     height: calc(100% - 100px);
-    background-color: blue;
 }
 
 /* ASIDE  */
 aside {
     width: 80px;
     height: 100vh;
-    background-color: brown;
+    background-color: #051E34;
+    background-image: url(../img/sidebar-bg.png);
 }
 
 /* MAIN-CONTENT  */
 .main-content {
    width: calc(100% - 80px);
    height: 100vh;
-   background-color: coral;
 }
 
 .ms_content_top {
     height: 200px;
     width: 100vw;
-    background-color: chartreuse;
+    background-color: #1B72E8;
 }
 
-.prossime-classi {
-   
-    background-color: yellow;
+.ms_img_avatar {
+    width: 20px;
 }
-
-.faq {
-    
-    background-color: pink;
-}
-
-.todo {
-    
-    background-color: green;
-}
-
-.utenti-attivi {
-   
-    background-color: orange;
-}
-
 
 /* RESPONSIVE */
 @media screen and (min-width: 992px) {

@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- link bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
     <!-- link icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link font  -->
@@ -21,7 +20,28 @@
 <body>
     <div class="wrapper">
         <!--HEADER-->
-        <header class="container-fluid">
+        <header class="ms_header d-flex align-items-center align-middle">
+            <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col-auto">
+                        <img class="d-lg-none ms_img_logo" src="img/mobile-logo.png" alt="">
+                        <img class="d-none d-lg-block" src="img/logo.svg" alt="">
+                    </div>
+
+                    <div class="col">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text bg-body-secondary" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" class="form-control bg-body-secondary border-start-0" placeholder="Prova a cercare: Lezione di Laravel" aria-label="Username" aria-describedby="addon-wrapping">
+                          </div>
+                    </div>
+
+                    <div class="col-auto">
+                        <i class="fa-solid fa-bell text-warning mt-1"></i>
+                    </div>
+                </div>
+            </div>
+
 
         </header>
 
@@ -29,35 +49,163 @@
         
         <main class="d-flex">
             <!-- ASIDE -->
-            <aside class="d-flex flex-column justify-content-between">
-
+            <aside class="d-flex flex-column justify-content-between text-white fs-3 text-center">
+                <div class="ms_aside_top">
+                    <i class="fa-solid fa-house"></i>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <i class="fa-solid fa-signal"></i>
+                </div>
+                <div class="ms_aside_bot">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+               
             </aside>
 
             <!-- MAIN CONTENT -->
             <section class="main-content overflow-y-auto">
 
-                <section class="ms_content_top d-flex row flex-column flex-md-row-reverse">
-                    <div class="col-4">testo 1</div>
-                    <div class="col-4">testo 2</div>
-                    <div class="col-4">testo 3</div>
+                <section class="ms_content_top d-flex row flex-column flex-md-row-reverse text-white">
+                    <div class="col-4">
+                        <span>Nuovo Studente</span> 
+                        <span><i class="fa-regular fa-square-plus fs-1"></i></span>
+                    </div>
+                    <div class="col-4">
+                        Boolean
+                        <span class="badge rounded-pill">Piano blaze</span>
+                        <span class="badge rounded-pill">3 app</span>
+                        <span class="badge rounded-pill">+</span>
+                    </div>
+                    <div class="col-4">
+                        <p>Studenti online negli ultimi 30 minuti</p>
+                        <span>125</span> 
+
+                    </div>
                 </section>
 
                 <div class="ms_content_bot">
                     <div class="container-fluid">
         
-                        <div class="row g-5">
+                        <div class="row g-5 mt-1">
 
                             <div class="col-12 col-lg-7">
 
                                 <div class="prossime-classi">
                                     <div class="card mb-4">
                                         <div class="card-header">
-                                          Featured
+                                          <h4>Prossime classi</h4>
                                         </div>
                                         <div class="card-body">
-                                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti molestiae, perferendis ratione velit sunt, quam similique suscipit nulla ullam aspernatur ipsa porro. At sed aspernatur repellendus exercitationem similique enim iusto!
-                                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo non, veritatis enim tempore totam ad ratione voluptatum minima iure iste vel qui, tempora pariatur, similique sunt neque itaque obcaecati at.
-                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi exercitationem, ex labore doloribus quibusdam delectus! Dicta eos, tempora in a necessitatibus temporibus error inventore nesciunt ducimus unde corporis aut.
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                      <th scope="col">Nome</th>
+                                                      <th class="d-none d-lg-block" scope="col">Data inizio</th>
+                                                      <th scope="col" class="d-none d-lg-block">ROI</th>
+                                                      <th scope="col">Stato</th>
+                                                      <th scope="col">Azioni</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row"><img class="ms_img_avatar d-inline-block" src="img/class-avatar.jpg" alt="">Classe 75</th>
+                                                        <td class="d-none d-lg-block">15 Feb 2021</td>
+                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <td>
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+                                                        <td>
+                                                            <span><i class="fa-solid fa-pencil"></i></span>
+                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><img class="ms_img_avatar" src="img/class-avatar.jpg" alt="">Classe 76</th>
+                                                        <td class="d-none d-lg-block">16 Feb 2021</td>
+                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <td>
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+                                                        <td>
+                                                            <span><i class="fa-solid fa-pencil"></i></span>
+                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><img class="ms_img_avatar" src="img/class-avatar.jpg" alt="">Classe 77</th>
+                                                        <td class="d-none d-lg-block">17 Feb 2021</td>
+                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <td>
+                                                            <span class="badge text-bg-warning text-white">Process</span>
+                                                        </td>
+                                                        <td>
+                                                            <span><i class="fa-solid fa-pencil"></i></span>
+                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><img class="ms_img_avatar" src="img/class-avatar.jpg" alt="">Classe 78</th>
+                                                        <td class="d-none d-lg-block">18 Feb 2021</td>
+                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <td>
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+                                                        <td>
+                                                            <span><i class="fa-solid fa-pencil"></i></span>
+                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><img class="ms_img_avatar" src="img/class-avatar.jpg" alt="">Classe 79</th>
+                                                        <td class="d-none d-lg-block">19 Feb 2021
+                                                        </td>
+                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <td>
+                                                            <span class="badge text-bg-danger">Failed</span>
+                                                        </td>
+                                                        <td>
+                                                            <span><i class="fa-solid fa-pencil"></i></span>
+                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><img class="ms_img_avatar" src="img/class-avatar.jpg" alt="">Classe 80</th>
+                                                        <td class="d-none d-lg-block">20 Feb 2021</td>
+                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <td>
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+                                                        <td>
+                                                            <span><i class="fa-solid fa-pencil"></i></span>
+                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><img class="ms_img_avatar" src="img/class-avatar.jpg" alt="">Classe 81</th>
+                                                        <td class="d-none d-lg-block">21 Feb 2021</td>
+                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <td>
+                                                            <span class="badge text-bg-danger">Failed</span>
+                                                        </td>
+                                                        <td>
+                                                            <span><i class="fa-solid fa-pencil"></i></span>
+                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><img class="ms_img_avatar" src="img/class-avatar.jpg" alt="">Classe 82</th>
+                                                        <td class="d-none d-lg-block">22 Feb 2021</td>
+                                                        <td class="d-none d-lg-block">20%</td>
+                                                        <td>
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+                                                        <td>
+                                                            <span><i class="fa-solid fa-pencil"></i></span>
+                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
                                         </div>
                                       </div>
                                 </div>
@@ -76,7 +224,7 @@
                                                   </h2>
                                                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                      Clicca sul + in alto nella sezione blu.
                                                     </div>
                                                   </div>
                                                 </div>
@@ -88,7 +236,7 @@
                                                   </h2>
                                                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                      Clicca sull'icona della campanella.
                                                     </div>
                                                   </div>
                                                 </div>
@@ -100,7 +248,7 @@
                                                   </h2>
                                                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                      Di solito è inusuale usare dashboard del genere da mobile, ma i nostri sviluppatori hanno fatto di tutto per permettere un'esperienza utente accettabile anche da dispositivi a schermi ridotti.
                                                     </div>
                                                   </div>
                                                 </div>
@@ -137,19 +285,28 @@
                                       </div>
                                 </div>
                                 <div class="utenti-attivi">
-                                    <div class="card">
-                                        <div class="card-header">
-                                          Featured
-                                        </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="img/stats.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit dolor consequatur aut sapiente reiciendis provident maxime temporibus quo eos excepturi distinctio impedit illo natus, deleniti recusandae deserunt ad fugiat.
+                                          <h5 class="card-title">Utenti attivi</h5>
+                                          <p class="card-text">Lista degli ultimi utenti attivi in piattaforma nell'ultimo mese</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                          <li class="list-group-item">Gennaio: 1200</li>
+                                          <li class="list-group-item">Febbraio: 800</li>
+                                          <li class="list-group-item">Marzo: 1500</li>
+                                        </ul>
+                                        <div class="card-body">
+                                          <a href="#" class="card-link">Visualizza report approfondito</a>
+
+                                        </div>
                                       </div>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                   
+                    
                 </div>
                 
                    
@@ -177,6 +334,6 @@
 
 
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
