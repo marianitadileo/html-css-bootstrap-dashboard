@@ -45,11 +45,9 @@
                 </div>
             </div>
 
-
         </header>
 
         <!-- MAIN -->
-        
         <main class="d-flex">
             <!-- ASIDE -->
             <aside class="d-flex flex-column justify-content-between text-white fs-4 text-center">
@@ -69,8 +67,11 @@
                     
                 </div>
                 <div class="ms_aside_bot pb-3">
-                    <i class="fa-solid fa-gear"></i>
-                    <span class="ps-2 d-none d-lg-inline-block">Admin</span>
+                    <div>
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="ps-2 d-none d-lg-inline-block">Admin</span>
+                    </div>
+
                 </div>
                
             </aside>
@@ -78,22 +79,30 @@
             <!-- MAIN CONTENT -->
             <section class="main-content overflow-y-auto">
 
-                <section class="ms_content_top d-flex row flex-column flex-md-row-reverse text-white">
-                    <div class="col-4">
-                        <span>Nuovo Studente</span> 
-                        <span><i class="fa-regular fa-square-plus fs-1"></i></span>
-                    </div>
-                    <div class="col-4">
-                        Boolean
-                        <span class="badge rounded-pill">Piano blaze</span>
-                        <span class="badge rounded-pill">3 app</span>
-                        <span class="badge rounded-pill">+</span>
-                    </div>
-                    <div class="col-4">
-                        <p>Studenti online negli ultimi 30 minuti</p>
-                        <span>125</span> 
+                <section class="ms_content_top text-white row pt-3">
 
-                    </div>
+                   <div class="col-12 col-md-4 order-md-3">
+                        <span>Nuovo Studente</span> 
+                        <button class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+                        
+                   </div> 
+
+                   <div class="col-12 col-md-4 order-md-1 gap-3 ">
+                        <h2 class="d-inline text-white">Boolean</h2> 
+                        <span class="badge rounded-pill ms_badge">Piano blaze</span> 
+                        <span class="badge rounded-pill ms_badge">3 app</span>
+                        <span><i class="fa-solid fa-angles-right"></i></span>
+                        <span class="badge rounded-pill d-none d-lg-inline ms_badge">Boolean mobile app</span> 
+                        <span class="badge rounded-pill d-none d-lg-inline ms_badge">Boolean web app</span> 
+                        <span class="badge rounded-pill d-none d-lg-inline ms_badge">Boolean blog app</span> 
+                        <span class="badge rounded-pill ms_badge d-lg-none">+</span>
+                   </div> 
+                   <div class="col-12 col-md-4 order-md-2">
+                    <p>Studenti online negli ultimi 30 minuti</p>
+                    <span class="fs-5">125</span> 
+                   </div> 
+                
+                    
                 </section>
 
                 <div class="ms_content_bot">
@@ -323,29 +332,9 @@
                     
                 </div>
                 
-                   
-
             </section>
 
         </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

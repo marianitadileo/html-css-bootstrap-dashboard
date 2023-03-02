@@ -38,7 +38,7 @@ aside {
 }
 
 .ms_content_top {
-    height: 200px;
+    height: 300px;
     width: 100vw;
     background-color: #1B72E8;
 }
@@ -47,6 +47,9 @@ aside {
     width: 25px;
 }
 
+.ms_badge {
+    background-color: #165BBA;
+}
 /* RESPONSIVE */
 @media screen and (min-width: 992px) {
     aside {
@@ -54,11 +57,30 @@ aside {
    } 
 
    .main-content {
-    width: calc(100% - 150px);
+        width: calc(100% - 150px);
    }
 
    .ms_img_logo_lg {
-    width: 100%;
-    padding-top: 5px;
+        width: 100%;
+        padding-top: 5px;
+    }
 }
+
+@media screen and (min-width: 768px) {
+    .ms_content_top {
+        height: 150px;
+    }
+}
+
+.ms_aside_top div:hover {
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.ms_aside_bot div:hover {
+    background-color: rgb(255, 255, 255, 0.7);
+
+}
+
+.badge:hover {
+    background-color: #123a71;
 }
